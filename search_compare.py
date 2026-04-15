@@ -77,7 +77,9 @@ def binary_search_recursive(a_list,item):
             else:
                 result = binary_search_recursive(a_list[midpoint + 1:], item)
 
-def main():
+
+if __name__ == "__main__":
+    """Main entry point"""
     list_sizes = [500, 1000, 5000]
 
     for the_size in list_sizes:
@@ -128,7 +130,3 @@ def main():
         
         avg_bin_rec = total_time_bin_rec / 100
         print(f"Binary Search Recursive took {avg_bin_rec:10.7f} seconds to run, on average for a list of {the_size} elements")
-
-if __name__ == "__main__":
-    """Main entry point"""
-    main()

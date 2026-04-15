@@ -67,7 +67,8 @@ def python_sort(a_list):
     return sorted(a_list)
 
 
-def main():
+if __name__ == "__main__":
+    """Main entry point"""
     list_sizes = [500, 1000, 5000]
 
     # the_size = list_sizes[0]
@@ -105,7 +106,3 @@ def main():
         
         avg_time_shell = total_time_shell / 100
         print(f"Shell sort took {avg_time_shell:10.7f} seconds to run, on average for a list of {the_size} elements")
-
-if __name__ == "__main__":
-    """Main entry point"""
-    main()
