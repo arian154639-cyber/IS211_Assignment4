@@ -66,16 +66,16 @@ def binary_search_iterative(a_list,item):
     
 def binary_search_recursive(a_list,item):
     if len(a_list) == 0:
-        result = False
+        return False
     else:
         midpoint = len(a_list) // 2
         if a_list[midpoint] == item:
-            result = True
+            return True
         else:
             if item < a_list[midpoint]:
-                result = binary_search_recursive(a_list[:midpoint], item)
+                return binary_search_recursive(a_list[:midpoint], item)
             else:
-                result = binary_search_recursive(a_list[midpoint + 1:], item)
+                return binary_search_recursive(a_list[midpoint + 1:], item)
 
 
 if __name__ == "__main__":
