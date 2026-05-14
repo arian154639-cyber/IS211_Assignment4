@@ -77,9 +77,9 @@ if __name__ == "__main__":
         total_time_python = 0
         for i in range(100):
             mylist = get_me_random_list(the_size)
-            start_time = time.time()
+            start = time.time()
             sorted_list = python_sort(mylist)
-            time_spent = time.time() - start_time
+            time_spent = time.time() - start
             total_time_python += time_spent
         
         avg_time_python = total_time_python / 100
@@ -88,9 +88,9 @@ if __name__ == "__main__":
         total_time_insertion = 0
         for i in range(100):
             mylist = get_me_random_list(the_size)
-            start_time = time.time()
+            start = time.time()
             insertion_sort(mylist)
-            time_spent = time.time() - start_time
+            time_spent = time.time() - start
             total_time_insertion += time_spent
         
         avg_time_insertion = total_time_insertion / 100
@@ -99,9 +99,9 @@ if __name__ == "__main__":
         total_time_shell = 0
         for i in range(100):
             mylist = get_me_random_list(the_size)
-            start_time = time.time()
+            start = time.time()
             shellSort(mylist)
-            time_spent = time.time() - start_time
+            time_spent = time.time() - start
             total_time_shell += time_spent
         
         avg_time_shell = total_time_shell / 100
